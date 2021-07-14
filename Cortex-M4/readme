@@ -1,0 +1,5 @@
+Benchmark:
+
+python3 build_everything.py
+sudo python3 benchmarks.py
+python3 convert_benchmarks.py md

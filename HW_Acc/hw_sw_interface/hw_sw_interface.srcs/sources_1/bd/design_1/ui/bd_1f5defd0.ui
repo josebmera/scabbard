@@ -1,0 +1,43 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 470 -defaultsOSRD
+preplace inst wrapper_0 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -y 540 -defaultsOSRD
+preplace inst interfacer_ipcore_0_0 -pg 1 -lvl 3 -y 180 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -y 280 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 530 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 280 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 530 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 6 1 NJ
+preplace netloc interfacer_ipcore_0_0_M00_AXIS 1 3 1 1340
+preplace netloc wrapper_0_status0 1 2 1 N
+preplace netloc axi_dma_0_m_axis_mm2s_tkeep 1 2 3 900 400 NJ 400 1780
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 410 20 NJ 20 NJ 20 NJ 20 NJ 20 2590
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 400 240 890 390 1330 310 NJ
+preplace netloc axi_smc_M00_AXI 1 5 1 2100
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 20 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 2580
+preplace netloc interfacer_ipcore_0_0_command0 1 1 3 450 340 NJ 340 1280
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 880
+preplace netloc interfacer_ipcore_0_0_m00_axis_tkeep 1 3 1 1320
+preplace netloc interfacer_ipcore_0_0_poly_bram_din 1 1 3 430 360 NJ 360 1300
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 1800
+preplace netloc interfacer_ipcore_0_0_poly_bram_address 1 1 3 420 350 NJ 350 1310
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 1810
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 20 180 390 10 870 490 1300 670 1820 540 2100 670 2570
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 2 3 900 10 NJ 10 1790
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 2 900 480 NJ
+preplace netloc wrapper_0_poly_bram_dout 1 2 1 N
+preplace netloc interfacer_ipcore_0_0_poly_bram_we 1 1 3 440 370 NJ 370 1290
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 380
+levelinfo -pg 1 0 200 660 1090 1560 1960 2340 2610 -top 0 -bot 680
+",
+}
+{
+   da_axi4_cnt: "4",
+   da_clkrst_cnt: "1",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,5 @@
+
+rtl - contains the verilog sources of the multipliers
+
+hw_sw_interface - contains a sample project implementing the HW/SW system
+

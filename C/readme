@@ -1,0 +1,3 @@
+First go to the specific folder then
+for compilation: make test/test_kex
+for execution:   ./test/test_kex

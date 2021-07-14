@@ -1,0 +1,6 @@
+17:05:23 INFO  : Registering command handlers for SDK TCF services
+17:05:30 INFO  : Launching XSCT server: xsct -n -interactive /home/jose/vivado/hw_sw_interface/hw_sw_interface.sdk/temp_xsdb_launch_script.tcl
+17:05:33 INFO  : XSCT server has started successfully.
+17:05:35 INFO  : Successfully done setting XSCT server connection channel  
+17:05:35 INFO  : Successfully done setting SDK workspace  
+17:05:35 INFO  : Processing command line option -hwspec /home/jose/vivado/hw_sw_interface/hw_sw_interface.sdk/design_1_wrapper.hdf.
