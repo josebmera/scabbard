@@ -273,12 +273,11 @@ unsigned char indcpa_kem_enc_cmp(unsigned char *message_received_byte, unsigned 
 
 	//---------pack vprime--------------
 	
-	fail |= rlwr_pack_3bit_cmp(&ciphertext_byte[rlwr_POLYCOMPRESSEDBYTES], sk1);
+	fail |= rlwr_pack_4bit_cmp(&ciphertext_byte[rlwr_POLYCOMPRESSEDBYTES], sk1);
 	fail = ~fail + 1;
 	fail >>= 63;
 
 	return (unsigned char)fail;
 }
-
 
 
