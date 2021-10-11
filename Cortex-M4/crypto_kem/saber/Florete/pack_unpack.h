@@ -2,7 +2,7 @@
 #define PACK_UNPACK_H
 
 #include <stdio.h>
-#include<stdint.h>
+#include <stdint.h>
 #include "params.h"
 
 
@@ -24,7 +24,7 @@ void rlwr_un_pack9bit(const uint8_t *bytes, uint16_t *data);
 
 unsigned char rlwr_pack_9bit_cmp(uint8_t *bytes, uint16_t *data);
 
-unsigned char rlwr_pack_3bit_cmp(uint8_t *bytes, uint16_t *data);
+unsigned char rlwr_pack_4bit_cmp(uint8_t *bytes, uint16_t *data);
 
 void POLSEC2BS(uint8_t *bytes, uint16_t data[rlwr_N]);
 
