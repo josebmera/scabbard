@@ -136,17 +136,15 @@ unsigned char rlwr_pack_9bit_cmp(uint8_t *bytes, uint16_t *data)
 	return fail;
 }
 
-unsigned char rlwr_pack_3bit_cmp(uint8_t *bytes, uint16_t *data)
+unsigned char rlwr_pack_4bit_cmp(uint8_t *bytes, uint16_t *data)
 {
 	unsigned char fail = 0;
 	uint32_t i;
 	uint32_t offset_data,offset_byte;
-	for(i=0;i<rlwr_N/8;i++){
-		offset_byte=3*i;
-		offset_data=8*i;
-		fail |= bytes[offset_byte + 0] ^ ((data[offset_data + 0] & 0x7) | ( (data[offset_data + 1] & 0x7)<<3 ) | ((data[offset_data + 2] & 0x3)<<6));
-		fail |= bytes[offset_byte + 1] ^ (((data[offset_data + 2] >> 2 ) & 0x01)  | ( (data[offset_data + 3] & 0x7)<<1 ) | ( (data[offset_data + 4] & 0x7)<<4 ) | (((data[offset_data + 5]) & 0x01)<<7));
-		fail |= bytes[offset_byte + 2] ^ (((data[offset_data + 5] >> 1 ) & 0x03) | ( (data[offset_data + 6] & 0x7)<<2 ) | ( (data[offset_data + 7] & 0x7)<<5 ));
+	for(i=0;i<rlwr_N/2;i++){
+		offset_byte=i;
+		offset_data=2*i;
+		fail |= bytes[offset_byte + 0] ^ (data[offset_data + 0] & 0x0f) | ( (data[offset_data + 1] & 0x0f)<<4 );
 	}
 	return fail;
 }
@@ -177,7 +175,6 @@ void BS2POLSEC(const unsigned char *bytes, uint16_t data[rlwr_N])
 		data[offset_data+3] = ( ((bytes[offset_byte]>>6) & 0x03) ^ 0x2 ) - 0x2;
 	}
 }
-
 
 
 
